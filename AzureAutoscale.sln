@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureAutoscale", "AzureAutoscale\AzureAutoscale.ccproj", "{E24AFD4F-3B9C-48C0-B45A-2282BCF0E115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureAutoscale.Worker", "AzureAutoscale.Worker\AzureAutoscale.Worker.csproj", "{9F57ACC4-0887-4A0E-BE67-F633D8DF118C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E24AFD4F-3B9C-48C0-B45A-2282BCF0E115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24AFD4F-3B9C-48C0-B45A-2282BCF0E115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24AFD4F-3B9C-48C0-B45A-2282BCF0E115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24AFD4F-3B9C-48C0-B45A-2282BCF0E115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F57ACC4-0887-4A0E-BE67-F633D8DF118C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F57ACC4-0887-4A0E-BE67-F633D8DF118C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F57ACC4-0887-4A0E-BE67-F633D8DF118C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F57ACC4-0887-4A0E-BE67-F633D8DF118C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.WindowsAzure.Autoscaling.5.0.1118.2\lib\NET4;packages\EnterpriseLibrary.WindowsAzure.Autoscaling.5.0.1118.2\DesignTime
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EnterpriseLibrary.WindowsAzure.Autoscaling</id>
+    <version>5.0.1118.2</version>
+    <title>Enterprise Library 5.0 - Autoscaling Application Block</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.opensource.org/licenses/ms-pl</licenseUrl>
+    <projectUrl>http://entlib.codeplex.com/wikipage?title=EntLib5Azure</projectUrl>
+    <iconUrl>http://nuget.org/Media/Default/Packages/EnterpriseLibrary.Source.WindowsAzure.Preview/5.0.907.0/ELAzure_nuget_icon_100x100.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The Microsoft Enterprise Library Autoscaling Application Block for Windows Azure provides reusable and testable components to add or manage autoscaling capabilities for Windows Azure hosted services and applications. The block is a part of the Enterprise Library Integration Pack for Windows Azure.</description>
+    <summary>The Enterprise Library Autoscaling Application Block for Windows Azure ("Wasabi") provides reusable and testable components to add or manage autoscaling capabilities for Windows Azure hosted services and applications.</summary>
+    <copyright>© 2011 Microsoft Corporation</copyright>
+    <tags>entlib enterprise library elazure Windows azure autoscaling scaling Wasabi block cloud</tags>
+    <dependencies>
+      <dependency id="EnterpriseLibrary.Common" version="5.0" />
+      <dependency id="Rx-Main" version="1.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

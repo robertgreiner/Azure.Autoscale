@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<serviceModel xmlns="http://schemas.microsoft.com/practices/2011/entlib/autoscaling/serviceModel">
+  <subscriptions>
+    <subscription name="[YOUR SUBSCRIPTION NAME]"
+		              subscriptionId="[YOUR SUBSCRIPTION ID]"
+		              certificateThumbprint="[YOUR CERT THUMPRINT]"
+		              certificateStoreName="My"
+		              certificateStoreLocation="CurrentUser">
+      <services>
+        <service dnsPrefix="[YOUR SERVICE NAME]" slot="Production" scalingMode="Scale">
+          <roles>
+            <role alias="WasabiDemoWebRole"
+		              roleName="WasabiDemoWebRole"
+		              wadStorageAccountName="[YOUR STORAGE ACCOUNT NAME]"/>
+          </roles>
+        </service>
+      </services>
+      <storageAccounts>
+        <storageAccount alias="[YOUR STORAGE ACCOUNT]"
+		connectionString="DefaultEndpointsProtocol=https;AccountName=[YOUR STORAGE ACCOUNT NAME];AccountKey=[YOUR STORAGE ACCOUNT KEY]">
+          <queues>
+            <queue alias="workerqueue" queueName="workerqueue" />
+          </queues>
+        </storageAccount>
+      </storageAccounts>
+    </subscription>
+  </subscriptions>
+  <stabilizer scaleUpCooldown="00:01:00"
+	        scaleDownCooldown="00:01:00"
+	        scaleUpOnlyInFirstMinutesOfHour="0"
+	        scaleDownOnlyInLastMinutesOfHour="0" />
+</serviceModel>

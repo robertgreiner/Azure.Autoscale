@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rules xmlns="http://schemas.microsoft.com/practices/2011/entlib/autoscaling/rules">
+  <constraintRules>
+    <rule name="default" enabled="true" rank="1">
+      <actions>
+        <range target="AzureApi.Api" min="2" max="2"/>
+      </actions>
+    </rule>
+  </constraintRules>
+</rules>
